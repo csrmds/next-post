@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../curso-nextjs/next-crud"
+		},
+		{
+			"path": "../curso-nextjs/renderizacao"
+		}
+	],
+	"settings": {}
+}
