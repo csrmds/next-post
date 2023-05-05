@@ -23,7 +23,8 @@ constructor(
    this.#autor= autor
    this.#dataCreated= dataCreated
    this.#dataModified= dataModified
-   this.#dataCreatedBr= format(parseISO(dataCreated), 'dd/MM/yyyy')
+   this.#dataCreatedBr= ""
+   //this.#dataCreatedBr= format(parseISO(dataCreated), 'dd/MM/yyyy')
 }
 
 get id() {
@@ -60,7 +61,7 @@ get attributes() {
 
 setAttributes(post: any) {
    this.#id= post.id
-   this.#contentText= post.content
+   this.#contentText= post.contentText
    this.#autor= post.autor
 }
 

@@ -1,5 +1,9 @@
+import dynamic from "next/dynamic";
 import PostsModel from "@/model/post";
 import nextPostDb from "@/database/dbConnect";
+
+// const PostsModel= dynamic(()=> import("@/model/post"), { ssr: false })
+// const nextPostDb= dynamic(()=> import("@/database/dbConnect"), { ssr: false })
 
 export default class PostsHook {
 
