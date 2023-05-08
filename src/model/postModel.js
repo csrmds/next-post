@@ -64,4 +64,17 @@ export default class PostModel {
          })
 
    }
+
+   async uploadFile(payload) {
+      console.log("func uploadFile")
+
+      await axios.post('/api/upload', payload)
+         .then(response=> {
+            console.log(response.data)
+         })
+         .catch(error=> {
+            console.error(error)
+         })
+   }
+
 }
